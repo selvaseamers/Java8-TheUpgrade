@@ -15,6 +15,8 @@ public class SortOnDemandMain {
 											   new Employee("karthik", "reddy", 40, 20000),
 											   new Employee("rama", "devi", 29, 30000));
 
+		
+		//Comparator is a functional interface
 		Comparator<Employee> sortByFName = (object1, object2) -> {
 			return object1.firstName.compareTo(object2.firstName);
 		};

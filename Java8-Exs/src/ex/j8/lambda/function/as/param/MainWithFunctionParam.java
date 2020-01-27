@@ -15,14 +15,14 @@ public class MainWithFunctionParam {
 			return sortList;
 		};
 		
-		GenericFunctionParamI<List<String>> reverse = (function, list) -> {
+		GenericFunctionParamI<List<String>> reverseFunc = (function, list) -> {
 			function.apply(list);
 			Collections.reverse(list);
 			return list;
 		};
 		
 		System.out.println("Before sort : "+ name);
-		System.out.println("After sort functional applied : "+reverse.applyFunc(sortFunc, name));
+		System.out.println("After sort functional applied : "+reverseFunc.applyFunc(sortFunc, name)); //function as param
 	}
 
 }
