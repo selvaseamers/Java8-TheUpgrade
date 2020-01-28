@@ -10,6 +10,8 @@ public class ZonedDateTimemain {
 
 		Instant dateTime = Instant.now();
 		
+		//refer for list of zone id's supported in java https://github.com/nfergu/Java-Time-Zone-List/blob/master/TimeZones/src/TimeZoneList.java
+		
 		System.out.println("Current Europe/London time : "+dateTime.atZone(ZoneId.of("Europe/London")));
 		
 		System.out.println("Current Atlantic/Azores time : "+dateTime.atZone(ZoneId.of("Atlantic/Azores")));
